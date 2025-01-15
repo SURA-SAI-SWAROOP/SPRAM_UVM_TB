@@ -35,7 +35,7 @@ class my_transaction extends uvm_sequence_item;
     enable=tr.enable;
     data_in=tr.data_in;
     addr=tr.addr:
-    data out=tr.data out:
+    data_out=tr.data_out:
   endfunction
     
   function string convert2string();
@@ -58,6 +58,6 @@ class my_transaction extends uvm_sequence_item;
     printer.print_int("enable", enable, $bits (enable), UVM_HEX);
     printer.print_int("data_in", data_in, $bits (data_in), UVM_HEX);
     printer.print_int("addr", addr, $bits (addr), UVM_HEX);
-    printer.print_int("data out", data out, $bits (data out), UVM HEX);
+    printer.print_int("data_out", data_out, $bits (data_out), UVM HEX);
   endfunction
 endclass
